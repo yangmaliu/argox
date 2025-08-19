@@ -11,7 +11,7 @@ TEMP_DIR='/tmp/argox'
 TLS_SERVER='addons.mozilla.org'
 METRICS_PORT='3333'
 CDN_DOMAIN=("skk.moe" "ip.sb" "time.is" "cfip.xxxxxxxx.tk" "bestcf.top" "cdn.2020111.xyz" "xn--b6gac.eu.org")
-SUBSCRIBE_TEMPLATE="https://raw.githubusercontent.com/fscarmen/client_template/main"
+SUBSCRIBE_TEMPLATE="https://raw.githubusercontent.com/yangmaliu/client_template/main"
 DEFAULT_XRAY_VERSION='25.4.30'
 
 export DEBIAN_FRONTEND=noninteractive
@@ -24,16 +24,16 @@ E[0]="Language:\n 1. English (default) \n 2. 简体中文"
 C[0]="${E[0]}"
 E[1]="Added the ability to change CDNs online using [argox -d]."
 C[1]="新增使用 [argox -d] 在线更换 CDN 功能"
-E[2]="Project to create Argo tunnels and Xray specifically for VPS, detailed:[https://github.com/fscarmen/argox]\n Features:\n\t • Allows the creation of Argo tunnels via Token, Json and ad hoc methods. User can easily obtain the json at https://fscarmen.cloudflare.now.cc .\n\t • Extremely fast installation method, saving users time.\n\t • Support system: Ubuntu, Debian, CentOS, Alpine and Arch Linux 3.\n\t • Support architecture: AMD,ARM and s390x\n"
-C[2]="本项目专为 VPS 添加 Argo 隧道及 Xray,详细说明: [https://github.com/fscarmen/argox]\n 脚本特点:\n\t • 允许通过 Token, Json 及 临时方式来创建 Argo 隧道,用户通过以下网站轻松获取 json: https://fscarmen.cloudflare.now.cc\n\t • 极速安装方式,大大节省用户时间\n\t • 智能判断操作系统: Ubuntu 、Debian 、CentOS 、Alpine 和 Arch Linux,请务必选择 LTS 系统\n\t • 支持硬件结构类型: AMD 和 ARM\n"
+E[2]="Project to create Argo tunnels and Xray specifically for VPS, detailed:[https://github.com/yangmaliu/argox]\n Features:\n\t • Allows the creation of Argo tunnels via Token, Json and ad hoc methods. User can easily obtain the json at https://yangmaliu.cloudflare.now.cc .\n\t • Extremely fast installation method, saving users time.\n\t • Support system: Ubuntu, Debian, CentOS, Alpine and Arch Linux 3.\n\t • Support architecture: AMD,ARM and s390x\n"
+C[2]="本项目专为 VPS 添加 Argo 隧道及 Xray,详细说明: [https://github.com/yangmaliu/argox]\n 脚本特点:\n\t • 允许通过 Token, Json 及 临时方式来创建 Argo 隧道,用户通过以下网站轻松获取 json: https://yangmaliu.cloudflare.now.cc\n\t • 极速安装方式,大大节省用户时间\n\t • 智能判断操作系统: Ubuntu 、Debian 、CentOS 、Alpine 和 Arch Linux,请务必选择 LTS 系统\n\t • 支持硬件结构类型: AMD 和 ARM\n"
 E[3]="Input errors up to 5 times.The script is aborted."
 C[3]="输入错误达5次,脚本退出"
 E[4]="UUID should be 36 characters, please re-enter \(\${a} times remaining\)"
 C[4]="UUID 应为36位字符,请重新输入 \(剩余\${a}次\)"
-E[5]="The script supports Debian, Ubuntu, CentOS, Alpine or Arch systems only. Feedback: [https://github.com/fscarmen/argox/issues]"
-C[5]="本脚本只支持 Debian、Ubuntu、CentOS、Alpine 或 Arch 系统,问题反馈:[https://github.com/fscarmen/argox/issues]"
-E[6]="Curren operating system is \$SYS.\\\n The system lower than \$SYSTEM \${MAJOR[int]} is not supported. Feedback: [https://github.com/fscarmen/argox/issues]"
-C[6]="当前操作是 \$SYS\\\n 不支持 \$SYSTEM \${MAJOR[int]} 以下系统,问题反馈:[https://github.com/fscarmen/argox/issues]"
+E[5]="The script supports Debian, Ubuntu, CentOS, Alpine or Arch systems only. Feedback: [https://github.com/yangmaliu/argox/issues]"
+C[5]="本脚本只支持 Debian、Ubuntu、CentOS、Alpine 或 Arch 系统,问题反馈:[https://github.com/yangmaliu/argox/issues]"
+E[6]="Curren operating system is \$SYS.\\\n The system lower than \$SYSTEM \${MAJOR[int]} is not supported. Feedback: [https://github.com/yangmaliu/argox/issues]"
+C[6]="当前操作是 \$SYS\\\n 不支持 \$SYSTEM \${MAJOR[int]} 以下系统,问题反馈:[https://github.com/yangmaliu/argox/issues]"
 E[7]="Install dependence-list:"
 C[7]="安装依赖列表:"
 E[8]="All dependencies already exist and do not need to be installed additionally."
@@ -42,8 +42,8 @@ E[9]="To upgrade, press [y]. No upgrade by default:"
 C[9]="升级请按 [y]，默认不升级:"
 E[10]="(3/8) Please enter Argo Domain (Default is temporary domain if left blank):"
 C[10]="(3/8) 请输入 Argo 域名 (如果没有，可以跳过以使用 Argo 临时域名):"
-E[11]="Please enter Argo Token or Json ( User can easily obtain the json at https://fscarmen.cloudflare.now.cc ):"
-C[11]="请输入 Argo Token 或者 Json ( 用户通过以下网站轻松获取 json: https://fscarmen.cloudflare.now.cc ):"
+E[11]="Please enter Argo Token or Json ( User can easily obtain the json at https://yangmaliu.cloudflare.now.cc ):"
+C[11]="请输入 Argo Token 或者 Json ( 用户通过以下网站轻松获取 json: https://yangmaliu.cloudflare.now.cc ):"
 E[12]="\(6/8\) Please enter Xray UUID \(Default is \$UUID_DEFAULT\):"
 C[12]="\(6/8\) 请输入 Xray UUID \(默认为 \$UUID_DEFAULT\):"
 E[13]="\(7/8\) Please enter Xray WS Path \(Default is \$WS_PATH_DEFAULT\):"
@@ -70,8 +70,8 @@ E[23]="Virtualization"
 C[23]="虚拟化"
 E[24]="Choose:"
 C[24]="请选择:"
-E[25]="Curren architecture \$(uname -m) is not supported. Feedback: [https://github.com/fscarmen/argox/issues]"
-C[25]="当前架构 \$(uname -m) 暂不支持,问题反馈:[https://github.com/fscarmen/argox/issues]"
+E[25]="Curren architecture \$(uname -m) is not supported. Feedback: [https://github.com/yangmaliu/argox/issues]"
+C[25]="当前架构 \$(uname -m) 暂不支持,问题反馈:[https://github.com/yangmaliu/argox/issues]"
 E[26]="Not install"
 C[26]="未安装"
 E[27]="close"
@@ -110,20 +110,20 @@ E[43]="\$APP local verion: \$LOCAL.\\\t The newest verion: \$ONLINE"
 C[43]="\$APP 本地版本: \$LOCAL.\\\t 最新版本: \$ONLINE"
 E[44]="No upgrade required."
 C[44]="不需要升级"
-E[45]="Argo authentication message does not match the rules, neither Token nor Json, script exits. Feedback:[https://github.com/fscarmen/argox/issues]"
-C[45]="Argo 认证信息不符合规则，既不是 Token，也是不是 Json，脚本退出，问题反馈:[https://github.com/fscarmen/argox/issues]"
+E[45]="Argo authentication message does not match the rules, neither Token nor Json, script exits. Feedback:[https://github.com/yangmaliu/argox/issues]"
+C[45]="Argo 认证信息不符合规则，既不是 Token，也是不是 Json，脚本退出，问题反馈:[https://github.com/yangmaliu/argox/issues]"
 E[46]="Connect"
 C[46]="连接"
-E[47]="The script must be run as root, you can enter sudo -i and then download and run again. Feedback:[https://github.com/fscarmen/argox/issues]"
-C[47]="必须以root方式运行脚本，可以输入 sudo -i 后重新下载运行，问题反馈:[https://github.com/fscarmen/argox/issues]"
-E[48]="Downloading the latest version \$APP failed, script exits. Feedback:[https://github.com/fscarmen/argox/issues]"
-C[48]="下载最新版本 \$APP 失败，脚本退出，问题反馈:[https://github.com/fscarmen/argox/issues]"
+E[47]="The script must be run as root, you can enter sudo -i and then download and run again. Feedback:[https://github.com/yangmaliu/argox/issues]"
+C[47]="必须以root方式运行脚本，可以输入 sudo -i 后重新下载运行，问题反馈:[https://github.com/yangmaliu/argox/issues]"
+E[48]="Downloading the latest version \$APP failed, script exits. Feedback:[https://github.com/yangmaliu/argox/issues]"
+C[48]="下载最新版本 \$APP 失败，脚本退出，问题反馈:[https://github.com/yangmaliu/argox/issues]"
 E[49]="\(8/8\) Please enter the node name. \(Default is \${NODE_NAME_DEFAULT}\):"
 C[49]="\(8/8\) 请输入节点名称 \(默认为 \${NODE_NAME_DEFAULT}\):"
 E[50]="\${APP[@]} services are not enabled, node information cannot be output. Press [y] if you want to open."
 C[50]="\${APP[@]} 服务未开启，不能输出节点信息。如需打开请按 [y]: "
-E[51]="Install Sing-box multi-protocol scripts [https://github.com/fscarmen/sing-box]"
-C[51]="安装 Sing-box 协议全家桶脚本 [https://github.com/fscarmen/sing-box]"
+E[51]="Install Sing-box multi-protocol scripts [https://github.com/yangmaliu/sing-box]"
+C[51]="安装 Sing-box 协议全家桶脚本 [https://github.com/yangmaliu/sing-box]"
 E[52]="Memory Usage"
 C[52]="内存占用"
 E[53]="The xray service is detected to be installed. Script exits."
@@ -134,10 +134,10 @@ E[55]="The script runs today: \$TODAY. Total: \$TOTAL"
 C[55]="脚本当天运行次数: \$TODAY，累计运行次数: \$TOTAL"
 E[56]="\(4/8\) Please enter the Reality port \(Default is \${REALITY_PORT_DEFAULT}\):"
 C[56]="\(4/8\) 请输入 Reality 的端口号 \(默认为 \${REALITY_PORT_DEFAULT}\):"
-E[57]="Install sba scripts (argo + sing-box) [https://github.com/fscarmen/sba]"
-C[57]="安装 sba 脚本 (argo + sing-box) [https://github.com/fscarmen/sba]"
-E[58]="No server ip, script exits. Feedback:[https://github.com/fscarmen/sing-box/issues]"
-C[58]="没有 server ip，脚本退出，问题反馈:[https://github.com/fscarmen/sing-box/issues]"
+E[57]="Install sba scripts (argo + sing-box) [https://github.com/yangmaliu/sba]"
+C[57]="安装 sba 脚本 (argo + sing-box) [https://github.com/yangmaliu/sba]"
+E[58]="No server ip, script exits. Feedback:[https://github.com/yangmaliu/sing-box/issues]"
+C[58]="没有 server ip，脚本退出，问题反馈:[https://github.com/yangmaliu/sing-box/issues]"
 E[59]="\(2/8\) Please enter VPS IP \(Default is: \${SERVER_IP_DEFAULT}\):"
 C[59]="\(2/8\) 请输入 VPS IP \(默认为: \${SERVER_IP_DEFAULT}\):"
 E[60]="Quicktunnel domain can be obtained from: http://\${SERVER_IP_1}:\${METRICS_PORT}/quicktunnel"
@@ -181,7 +181,7 @@ text() { grep -q '\$' <<< "${E[$*]}" && eval echo "\$(eval echo "\${${L}[$*]}")"
 
 # 检测是否需要启用 Github CDN，如能直接连通，则不使用
 check_cdn() {
-  [ -n "$GH_PROXY" ] && wget --server-response --quiet --output-document=/dev/null --no-check-certificate --tries=2 --timeout=3 https://${GH_PROXY}raw.githubusercontent.com/fscarmen/ArgoX/main/README.md >/dev/null 2>&1 || unset GH_PROXY
+  [ -n "$GH_PROXY" ] && wget --server-response --quiet --output-document=/dev/null --no-check-certificate --tries=2 --timeout=3 https://${GH_PROXY}raw.githubusercontent.com/yangmaliu/ArgoX/main/README.md >/dev/null 2>&1 || unset GH_PROXY
 }
 
 # 检测是否解锁 chatGPT，以决定是否使用 warp 链式代理或者是 direct out，此处判断改编自 https://github.com/lmc999/RegionRestrictionCheck
@@ -219,12 +219,12 @@ check_chatgpt() {
 statistics_of_run-times() {
   local UPDATE_OR_GET=$1
   local SCRIPT=$2
-  if grep -q 'update' <<< "$UPDATE_OR_GET"; then
-    { wget --no-check-certificate -qO- --timeout=3 "https://stat.cloudflare.now.cc/api/updateStats?script=${SCRIPT}" > $TEMP_DIR/statistics 2>/dev/null || true; }&
-  elif grep -q 'get' <<< "$UPDATE_OR_GET"; then
-    [ -s $TEMP_DIR/statistics ] && [[ $(cat $TEMP_DIR/statistics) =~ \"todayCount\":([0-9]+),\"totalCount\":([0-9]+) ]] && local TODAY="${BASH_REMATCH[1]}" && local TOTAL="${BASH_REMATCH[2]}" && rm -f $TEMP_DIR/statistics
-    hint "\n*******************************************\n\n $(text 55) \n"
-  fi
+  # if grep -q 'update' <<< "$UPDATE_OR_GET"; then
+  #   { wget --no-check-certificate -qO- --timeout=3 "https://stat.cloudflare.now.cc/api/updateStats?script=${SCRIPT}" > $TEMP_DIR/statistics 2>/dev/null || true; }&
+  # elif grep -q 'get' <<< "$UPDATE_OR_GET"; then
+  #   [ -s $TEMP_DIR/statistics ] && [[ $(cat $TEMP_DIR/statistics) =~ \"todayCount\":([0-9]+),\"totalCount\":([0-9]+) ]] && local TODAY="${BASH_REMATCH[1]}" && local TOTAL="${BASH_REMATCH[2]}" && rm -f $TEMP_DIR/statistics
+  #   hint "\n*******************************************\n\n $(text 55) \n"
+  # fi
 }
 
 # 选择中英语言
@@ -279,7 +279,7 @@ check_install() {
   [[ ${STATUS[0]} = "$(text 26)" ]] && [ ! -s $WORK_DIR/cloudflared ] && { wget --no-check-certificate -qO $TEMP_DIR/cloudflared https://${GH_PROXY}github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-$ARGO_ARCH >/dev/null 2>&1 && chmod +x $TEMP_DIR/cloudflared >/dev/null 2>&1; }&
   [[ ${STATUS[1]} = "$(text 26)" ]] && [ ! -s $WORK_DIR/xray ] && { wget --no-check-certificate -qO $TEMP_DIR/Xray.zip https://${GH_PROXY}github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-$XRAY_ARCH.zip >/dev/null 2>&1; unzip -qo $TEMP_DIR/Xray.zip xray *.dat -d $TEMP_DIR >/dev/null 2>&1; }&
   { wget --no-check-certificate --continue -qO $TEMP_DIR/jq https://${GH_PROXY}github.com/jqlang/jq/releases/download/jq-1.7.1/jq-linux-$JQ_ARCH >/dev/null 2>&1 && chmod +x $TEMP_DIR/jq >/dev/null 2>&1; }&
-  { wget --no-check-certificate --continue -qO $TEMP_DIR/qrencode https://${GH_PROXY}github.com/fscarmen/client_template/raw/main/qrencode-go/qrencode-go-linux-$QRENCODE_ARCH >/dev/null 2>&1 && chmod +x $TEMP_DIR/qrencode >/dev/null 2>&1; }&
+  { wget --no-check-certificate --continue -qO $TEMP_DIR/qrencode https://${GH_PROXY}github.com/yangmaliu/client_template/raw/main/qrencode-go/qrencode-go-linux-$QRENCODE_ARCH >/dev/null 2>&1 && chmod +x $TEMP_DIR/qrencode >/dev/null 2>&1; }&
 }
 
 # 为了适配 alpine，定义 cmd_systemctl 的函数
@@ -1194,7 +1194,7 @@ create_shortcut() {
   cat > $WORK_DIR/ax.sh << EOF
 #!/usr/bin/env bash
 
-bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/fscarmen/argox/main/argox.sh) \$1
+bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/yangmaliu/argox/main/argox.sh) \$1
 EOF
   chmod +x $WORK_DIR/ax.sh
   ln -sf $WORK_DIR/ax.sh /usr/bin/argox
@@ -1311,10 +1311,6 @@ $(text 67):
 https://${ARGO_DOMAIN}/${UUID}/auto
 
 $(text 67):
-$(text 64) QRcode:
-https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://${ARGO_DOMAIN}/${UUID}/auto
-
-$(text 67):
 $($WORK_DIR/qrencode "https://${ARGO_DOMAIN}/${UUID}/auto")
 EOF
 
@@ -1393,10 +1389,6 @@ https://${ARGO_DOMAIN}/${UUID}/shadowrocket")
 $(hint " $(text 66):
 $(text 67):
 https://${ARGO_DOMAIN}/${UUID}/auto
-
- $(text 64) QRcode:
-$(text 67):
-https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://${ARGO_DOMAIN}/${UUID}/auto")
 
 $($WORK_DIR/qrencode https://${ARGO_DOMAIN}/${UUID}/auto)
 "
@@ -1623,8 +1615,8 @@ menu_setting() {
     ACTION[5]() { version; exit; }
     ACTION[6]() { bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh); exit; }
     ACTION[7]() { uninstall; exit; }
-    ACTION[8]() { bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh) -$L; exit; }
-    ACTION[9]() { bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/fscarmen/sba/main/sba.sh) -$L; exit; }
+    ACTION[8]() { bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/yangmaliu/sing-box/main/sing-box.sh) -$L; exit; }
+    ACTION[9]() { bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/yangmaliu/sba/main/sba.sh) -$L; exit; }
 
   else
     OPTION[1]="1.  $(text 34)"
@@ -1634,8 +1626,8 @@ menu_setting() {
 
     ACTION[1]() { install_argox; export_list; create_shortcut; exit; }
     ACTION[2]() { bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh); exit; }
-    ACTION[3]() { bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh) -$L; exit; }
-    ACTION[4]() { bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/fscarmen/sba/main/sba.sh) -$L; exit; }
+    ACTION[3]() { bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/yangmaliu/sing-box/main/sing-box.sh) -$L; exit; }
+    ACTION[4]() { bash <(wget --no-check-certificate -qO- https://${GH_PROXY}raw.githubusercontent.com/yangmaliu/sba/main/sba.sh) -$L; exit; }
   fi
 
   [ "${#OPTION[@]}" -ge '10' ] && OPTION[0]="0 .  $(text 35)" || OPTION[0]="0.  $(text 35)"
