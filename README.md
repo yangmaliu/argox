@@ -51,7 +51,7 @@
 >
 >2023.4.13 1.0 正式版
 >
->2023.3.11 beta6 1. Users can easily obtain the JSON of a fixed domain name tunnel through the accompanying function website at https://fscarmen.cloudflare.now.cc ; 2. Change the sensitive path names; 3. Add CDN for download; 1. 用户可以通过配套的功能网轻松获取固定域名隧道的 json, https://fscarmen.cloudflare.now.cc;  2. 改掉敏感路径名; 3. 下载增加 CDN
+>2023.3.11 beta6 1. Users can easily obtain the JSON of a fixed domain name tunnel through the accompanying function website at https://yangmaliu.cloudflare.now.cc ; 2. Change the sensitive path names; 3. Add CDN for download; 1. 用户可以通过配套的功能网轻松获取固定域名隧道的 json, https://yangmaliu.cloudflare.now.cc;  2. 改掉敏感路径名; 3. 下载增加 CDN
 >
 >2023.3.4 beta5 1. Change listening to all network addresses to only Argo tunnel directed listening for added security; 2. Argo Tunnel supports dualstack; 1. 把对所有的网络地址监听改为只对 Argo 隧道作定向监听，以增加安全性; 2. Argo 隧道支持双栈
 >
@@ -82,7 +82,7 @@
 ## ArgoX for VPS 运行脚本:
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/yangmaliu/argox/main/argox.sh)
 ```
 
   | Option 参数 | Remark 备注 |
@@ -103,7 +103,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
 
 ## Argo Json 的获取
 
-用户可以通过 Cloudflare Json 生成网轻松获取: https://fscarmen.cloudflare.now.cc
+用户可以通过 Cloudflare Json 生成网轻松获取: https://yangmaliu.cloudflare.now.cc
 
 ![image](https://user-images.githubusercontent.com/62703343/224388718-6adf22d0-01d3-46a0-8063-bc0a2210795f.png)
 
@@ -130,9 +130,9 @@ bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
 
 | 说明 | 模板示例 |
 | --- | ------ |
-| chatGPT 使用链式 warp 代理，不需要本地安装 warp，其余流量走 vps 默认的网络出口 | [warp](https://gitlab.com/fscarmen/warp#通过-warp-解锁-chatgpt-的方法) |
-| 指定流量走本机指定的网络接口，对于双栈能区分 IPv4 或 IPv6，其余流量走 vps 默认的网络出口 | [interface](https://gitlab.com/fscarmen/warp#指定网站分流到-interface-的-xray-配置模板适用于-warp-client-warp-和-warp-warp-go-非全局) |
-| 指定流量走本机指定的socks5代理，对于双栈能区分 IPv4 或 IPv6，其余流量走 vps 默认的网络出口 | [socks5](https://gitlab.com/fscarmen/warp#指定网站分流到-socks5-的-xray-配置模板-适用于-warp-client-proxy-和-wireproxy) |
+| chatGPT 使用链式 warp 代理，不需要本地安装 warp，其余流量走 vps 默认的网络出口 | [warp](https://gitlab.com/yangmaliu/warp#通过-warp-解锁-chatgpt-的方法) |
+| 指定流量走本机指定的网络接口，对于双栈能区分 IPv4 或 IPv6，其余流量走 vps 默认的网络出口 | [interface](https://gitlab.com/yangmaliu/warp#指定网站分流到-interface-的-xray-配置模板适用于-warp-client-warp-和-warp-warp-go-非全局) |
+| 指定流量走本机指定的socks5代理，对于双栈能区分 IPv4 或 IPv6，其余流量走 vps 默认的网络出口 | [socks5](https://gitlab.com/yangmaliu/warp#指定网站分流到-socks5-的-xray-配置模板-适用于-warp-client-proxy-和-wireproxy) |
 
 
 ## 主体目录文件及说明
