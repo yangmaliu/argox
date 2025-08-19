@@ -1391,7 +1391,7 @@ $(text 67):
 https://${ARGO_DOMAIN}/${UUID}/auto")
 
 $($WORK_DIR/qrencode "https://${ARGO_DOMAIN}/${UUID}/auto")
-
+"
 EXPORT_LIST_FILE+="
 $(info "\n*******************************************
 
